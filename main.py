@@ -161,4 +161,4 @@ async def searching(request: Request, author_name: Annotated[str, Form()]):
 
 #, username: str = Depends(get_current_user)
 
-uvicorn.run(app, port=8005)
+uvicorn.run(app, host="0.0.0.0",port=8005)
